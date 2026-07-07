@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ferrari Showcase</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo"> <!-- small logo -->
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/34/Ferrari-Logo.svg" alt="logo" />
+    </div>
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#models">Models</a>
+      <a href="#bookings">Bookings</a>
+      <a href="#racing">Racing</a>
+      <a href="#products">Products</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero slider full viewport -->
+    <section id="home" class="hero">
+      <div class="slider" id="slider">
+        <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1950&q=80')">
+            <div class="hero-overlay">
+                <h1 class="big-title">FERRARI</h1>
+            </div>
+        </div>
+        <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1549921296-3ecf3aa7a74b?auto=format&fit=crop&w=1950&q=80')">
+            <div class="hero-overlay">
+                <h1 class="big-title">FERRARI</h1>
+            </div>
+        </div>
+        <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1950&q=80')">
+          <div class="hero-overlay">
+            <h1 class="big-title">FERRARI</h1>
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button id="prev">◀</button>
+        <button id="next">▶</button>
+      </div>
+    </section>
+
+    <!-- Two-column models row -->
+    <section id="models" class="models">
+      <div class="model-grid">
+        <a href="https://images.unsplash.com/photo-1515426114942-1e7a1a48534b?auto=format&fit=crop&w=1600&q=80" target="_blank" class="model-card">
+            <img src="https://images.unsplash.com/photo-1515426114942-1e7a1a48534b?auto=format&fit=crop&w=1200&q=60" alt="Model left">
+        </a>
+        <a href="https://images.unsplash.com/photo-1516032971171-7a0b25b0a9ee?auto=format&fit=crop&w=1600&q=80" target="_blank" class="model-card">
+            <img src="https://images.unsplash.com/photo-1516032971171-7a0b25b0a9ee?auto=format&fit=crop&w=1200&q=60" alt="Model right">
+        </a>
+      </div>
+
+      <div class="cta-area">
+        <button class="btn explore" id="exploreBtn">Explore</button>
+      </div>
+
+      <div class="desc">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doloremque porro, delectus nihil minus earum labore nam aliquam quo ipsa deleniti vero numquam.
+        </p>
+      </div>
+    </section>
+
+    <!-- Video section: free/open sample video trimmed to 30s via JS -->
+    <section id="racing" class="video-section">
+      <h2>Mini Video</h2>
+        <div class="video-wrap">
+          <video id="miniVideo" controls muted playsinline>
+            <!-- Free Ferrari-related clip (Pixabay) - free to use under Pixabay license -->
+            <source src="https://cdn.pixabay.com/video/2021/05/11/73801-549736223_large.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-note">This clip is from Pixabay (free to use). It will stop after 30 seconds (demo).</p>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="products" class="gallery">
+      <h2>Gallery</h2>
+      <div class="grid">
+        <a class="thumb" href="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80" target="_blank"><img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=60" alt="g1"></a>
+        <a class="thumb" href="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=80" target="_blank"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=60" alt="g2"></a>
+        <a class="thumb" href="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=1600&q=80" target="_blank"><img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=800&q=60" alt="g3"></a>
+        <a class="thumb" href="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1600&q=80" target="_blank"><img src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=800&q=60" alt="g4"></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© Ferrari Showcase — Demo site. Images from Unsplash and public sample video.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
